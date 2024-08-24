@@ -176,7 +176,7 @@ body {
     line-height: 2em;
 }
 
-#invitation p span {
+#invitation .bible {
     font-size: 12px;
     margin-right: 1em;
 }
@@ -236,6 +236,8 @@ body {
 /* 오시는 길 */
 #location {
     background-color: var(--main-bg-color2);
+    max-width: 500px;
+    min-width: 380px;
 }
 
 #location .top-title {
@@ -273,7 +275,6 @@ body {
     margin: 0 auto;
     text-align: center;
 }
-
 /* 축하해주세요 */
 #congrat {
     padding-bottom: 49px;
@@ -300,7 +301,7 @@ body {
 
 #congrat .contact-box-wrap .contact-box > img {
     margin-bottom: 10px;
-    width: 140px;
+    max-width: 140px;
     border-radius: 10px;
 }
 
@@ -325,14 +326,12 @@ body {
     font-weight: 400;
 }
 
-#congrat .bank-account p:first-child {
-    margin-bottom: 9px;
-}
 
 #congrat .bank-account .box01 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 9px;
 }
 
 #congrat .bank-account .box01 input {
@@ -357,16 +356,6 @@ body {
     width: 45px;
 }
 
-/* 풋터 */
-#main-footer {
-    background-color: var(--footer-color);
-}
-
-#main-footer .sns-icon {
-    padding: 38px 50px;
-    display: flex;
-    justify-content: space-between;
-}
 
 /*준비화면*/
 .splash-screen.on {
