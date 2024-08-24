@@ -1,0 +1,397 @@
+/*style.css*/
+.img1 {
+    background-image: url(./images/favicon.png);
+}
+:root {
+    --main-bg-color1 : #b2daff;
+    --main-bg-color2 : #ffffff;
+    --text-color : #3e3e47;
+    --footer-color : #ffd6fc;
+}
+
+@font-face {
+    font-family: 'hanggangB';
+    src: url('./font/SeoulHangangB.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'hanggangEB';
+    src: url('./font/SeoulHangangEB.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 28px;
+    font-family: 'hanggangEB';
+    font-weight: 400;
+}
+
+body {
+    font-family: 'hanggangB';
+    box-sizing: border-box;
+    margin: 0 auto;
+    color: var(--text-color);
+    max-width: 500px;
+    min-width: 380px;
+}
+
+/* 메인페이지 */
+
+.blue_ribon{
+    width: 60px;
+}
+
+#title {
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(./images/back_image.png);
+    display: flex;
+    flex-flow: column;
+}
+
+#title header {
+    height: 20vh;
+    box-sizing: border-box;
+}
+
+#title .name {
+    margin-bottom: 10px;
+}
+
+#title .name .logo {
+    width: 80px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#title .name  h2{
+    font-family: 'hanggangB';
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#title .name-icon {
+    width: 25px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+#title .title-photo {
+    width: calc(100% - 110px);
+    height: 65vh;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-bottom: 28px;
+    
+}
+
+#title .title-photo img {
+    width: 100%;
+    height: 100%;
+}
+
+#title .title-footer {
+    width: 100%;
+    height: 15vh;
+    box-sizing: border-box;
+    background: rgb(255, 255, 255);
+}
+
+#title .title-footer .title-footer-group {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title .title-footer .title-footer-group h3 {
+    font-family: 'hanggangB';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#title .title-footer .title-footer-group h2 {
+    font-family: 'hanggangB';
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* 서브페이지 타이틀 */
+
+.top-title {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.top-title img {
+    margin-bottom: 25px;
+}
+
+/* 모시는 글 */
+
+#invitation {
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #faf7f2;
+    display: flex;
+    flex-flow: column;
+}
+
+#invitation .top-title {
+    height: 20vh;
+    box-sizing: border-box;
+}
+
+#invitation .invitation-text {
+    height: 50vh;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#invitation p {
+    font-family: 'hanggangB';
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 2em;
+    line-height: 2em;
+}
+
+#invitation p span {
+    font-size: 12px;
+    margin-right: 1em;
+}
+
+#invitation .wedding-day {
+    width: calc(100% - 60px);
+    height: 30vh;
+    box-sizing: border-box;
+    padding-bottom: 35px;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+#invitation .wedding-day img {
+    width: 100%;
+    height: calc(30vh - 35px);
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/*갤러리*/
+#gallery-secti {
+    padding-bottom: 15px;
+    background-color: var(--main-bg-color1);
+}
+#gallery > figure {
+    /* outline: 2px solid red; */
+    padding: 15px; 
+}
+
+#gallery > figure > .main-photo > img {
+    width: 100%;
+    height: 100%;
+    max-height: 55vh;
+    object-fit: cover;
+    display: block;
+}
+
+#gallery > figure > .img-list {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#gallery > figure > .img-list > li {
+    width: calc((100% - 30px) / 5);
+    object-fit: cover;
+    max-height: 90px;
+    
+}
+
+#gallery > figure > .img-list > li > a > img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 오시는 길 */
+#location {
+    background-color: var(--main-bg-color2);
+}
+
+#location .top-title {
+    margin-bottom: 37.75px;
+}
+
+#location .add-tel {
+    margin-top: 24px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: left;
+}
+
+#location .add-tel .add-tel-text {
+    width: 350px;
+    margin: 0 auto;
+}
+
+#location .add-tel .add-tel-text p {
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+#location .add-tel .add_name {
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#location .add-tel .add-tel-text2 {
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* 축하해주세요 */
+#congrat {
+    padding-bottom: 49px;
+    background-color: var(--main-bg-color1);
+}
+
+#congrat .contact-box-wrap {
+    margin: 35px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#congrat .contact-box-wrap .contact-box {
+    width: calc((100% - 40px)/2);
+    height: 100%;
+    background-color: var(--main-bg-color2);
+    border-radius: 20px;
+    padding: 24px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#congrat .contact-box-wrap .contact-box > img {
+    margin-bottom: 10px;
+    width: 140px;
+    border-radius: 10px;
+}
+
+#congrat .contact-box-wrap .contact-box > p {
+    font-family: 'hanggangEB';
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+#congrat .contact-box-wrap .contact-box .icon-box {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#congrat .bank-account p {
+    font-family: 'hanggangEB';
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#congrat .bank-account p:first-child {
+    margin-bottom: 9px;
+}
+
+#congrat .bank-account .box01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#congrat .bank-account .box01 input {
+    border: none;
+    background: transparent;
+    font-family: 'hanggangEB';
+    color: var(--text-color);
+    width: 135px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#congrat .bank-account .box01 button {
+    border: none;
+    background: transparent;
+}
+
+#congrat .bank-account .box01 button img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+}
+
+/* 풋터 */
+#main-footer {
+    background-color: var(--footer-color);
+}
+
+#main-footer .sns-icon {
+    padding: 38px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*준비화면*/
+.splash-screen.on {
+    position: fixed;
+    /* left: 0; */
+    top: 0;
+    z-index: 999;
+    max-width: 500px;
+    min-width: 380px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: var(--main-bg-color1);
+}
+.splash-screen {
+    display: none;
+}
+
+.splash-screen img {
+    min-width: 380px;
+    max-width: 500px;
+    width: 100vw;
+    height: 100%;
+}
+
+
