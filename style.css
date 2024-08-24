@@ -302,7 +302,8 @@ body {
 
 #congrat .contact-box-wrap .contact-box > img {
     margin-bottom: 10px;
-    max-width: 140px;
+    max-width: 90px;
+    min-width: 50px;
     border-radius: 10px;
 }
 
