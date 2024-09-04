@@ -233,6 +233,13 @@ body {
     height: 100%;
 }
 
+#gallery  p {
+    text-align: center;
+    margin-top: 8px;
+    color: #8a006c;
+}
+
+
 /* 오시는 길 */
 #location {
     background-color: var(--main-bg-color2);
@@ -245,7 +252,7 @@ body {
 }
 
 #location .add-tel {
-    margin-top: 24px;
+    margin-top: 10px;
     padding-bottom: 40px;
     display: flex;
     flex-flow: column;
@@ -256,6 +263,7 @@ body {
 #location .add-tel .add-tel-text {
     width: 350px;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 #location .add-tel .add-tel-text p {
@@ -268,6 +276,7 @@ body {
     width: 350px;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 #location .add-tel .add-tel-text2 {
@@ -331,9 +340,10 @@ body {
 
 #congrat .bank-account .box01 {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
     margin-bottom: 9px;
+
 }
 
 #congrat .bank-account .box01 input {
